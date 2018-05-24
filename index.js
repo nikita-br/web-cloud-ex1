@@ -19,7 +19,6 @@ mongoose.connect(consts.MLAB_KEY)
 });
 //creating routes
 app.get('/authors', controller.findAllAuthors); // Get all authors - get method
-//app.get('/authors/:id', controller.findAuthorById);// Get author by id - get method
 app.post('/authors/authordata', controller.getAuthorProfileData);// Get author by id - post method
 app.get('/:genre/:year', controller.findAuthorByGenreAndYear);//Get author by genre and publication year
 app.get('/', (req, res) => { res.sendFile(__dirname + '/index.html');});// index.html
