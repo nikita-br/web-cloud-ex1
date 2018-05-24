@@ -17,7 +17,7 @@ mongoose.connect(consts.MLAB_KEY)
     }).catch(err => {
     console.log(`connection error: ${err}`);
 });
-
+//creating routes
 app.get('/authors', controller.findAllAuthors); // Get all authors - get method
 //app.get('/authors/:id', controller.findAuthorById);// Get author by id - get method
 app.post('/authors/authordata', controller.getAuthorProfileData);// Get author by id - post method
