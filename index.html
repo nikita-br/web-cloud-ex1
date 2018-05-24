@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>AmazonApi</title>
+</head>
+<body>
+
+<div id="wrapper">
+<header>
+    <div class="logo"></div>
+    <h1> Api Documentation for Amazon Books service.<br>Young Writers Management.</h1>
+</header>
+
+    <section class="api">
+        <div class="api-command">
+            <p1>GET:&nbsp;&nbsp;/authors</a></p1>
+            <p1>Get all authors</p1>
+        </div>
+        <div class="get">
+            <p class="title">request example:</p>
+            <p><a href="http://localhost:3000/authors">https://ex1-test.herokuapp.com/authors/</a></p>
+        <p class="title">response example: JSON</p>
+        <div class="json_structure">
+        </div>
+        </div>
+        <div class="api-command">
+            <p1>POST: &nbsp;&nbsp;/authors/authordata </a></p1>
+            <p1>Get author by id </p1>
+        </div>
+        <div class="get">
+        <p class="title">request body parameters example:</p><p>{<br>"_id":"5b01406460b4261e1bada60e"<br>}</p>
+        <p class="title">response example: JSON</p>
+        <div class="json_structure">
+        </div>
+        </div>
+
+        <div class="api-command">
+            <p1>GET:&nbsp;&nbsp;/authors/{genre}/{year}</p1>
+            <p1>Get author by genre and year of publication </p1>
+        </div>
+        <div class="get">
+            <p class="title">request  example:</p>
+            <p><a href="http://localhost:3000/Drama/2017">https://ex1-test.herokuapp.com/Drama/2017</a></p>
+            <p class="title">response example: JSON</p>
+            <div class="json_structure2">
+            </div>
+        </div>
+
+    </section>
+
+<div class="footer">
+
+</div>
+
+</div>
+</body>
+</html>
